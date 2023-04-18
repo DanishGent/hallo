@@ -7,22 +7,23 @@ def main():
     low = 0
     win = 0
     number = random.randint(1, 100)
+    userNum = 0
+
+    while (userNum != number):
+        userNum = int(input("Please guess a number between 1 and 100: "))
 
 
-    userNum = int(input("Please guess a number between 1 and 100: "))
-
-
-    if userNum > number:
-        message = "Too high, try again."
-        high += 1
-    elif userNum == number:
-        message = "You got it correct! Congratulations!"
-        win += 1
-    else:
-        message = "Too low, try again."
-        low += 1
-    print()
-    print(message)
+        if userNum > number:
+            message = "Too high, try again."
+            high += 1
+        elif userNum == number:
+            message = "You got it correct! Congratulations!"
+            win += 1
+        else:
+            message = "Too low, try again."
+            low += 1
+        print()
+        print(message)
 
 
 
