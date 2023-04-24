@@ -51,9 +51,9 @@ style.configure("Treeview", background=treeview_background, foreground=treeview_
 style.map('Treeview', background=[('selected', treeview_selected)])
 
 tree_1_scrollbar = tk.Scrollbar(main_window)
-tree_1_scrollbar.grid(row=5, column=6, padx=padx, pady=pady, sticky='ns')
+tree_1_scrollbar.grid(row=0, column=0, padx=padx, pady=pady, sticky='ns')
 tree_1 = ttk.Treeview(main_window, yscrollcommand=tree_1_scrollbar.set, selectmode="browse")
-tree_1.grid(row=5, column=6, padx=0, pady=pady)
+tree_1.grid(row=0, column=0, padx=0, pady=pady)
 tree_1_scrollbar.config(command=tree_1.yview)
 
 
@@ -74,7 +74,7 @@ tree_1.tag_configure('evenrow', background=evenrow)
 tree_1.bind("<ButtonRelease-1>", lambda event: edit_record(event, tree_1))
 
 frame_1 = tk.LabelFrame(main_window, text="Container")
-frame_1.grid(row=0, column=0, padx=padx, pady=pady, sticky=tk.N)
+frame_1.grid(row=1, column=0, padx=padx, pady=pady, sticky=tk.N)
 
 
 empty_entry_button = tk.Button(frame_1, text="Create", command=empty_entry)
