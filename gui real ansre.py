@@ -3,7 +3,7 @@ from tkinter import ttk
 
 
 def empty_entry():
-    print("button_1 was pressed")
+    print("your next")
     entry_1.delete(0, tk.END)
 
 def read_table(tree):
