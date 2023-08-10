@@ -10,27 +10,22 @@ Base = declarative_base()
 
 class Person(Base):
 
-
-    __tablename__ = "customers"
-    adrees = Column(Integer, primary_key=True)
-    name = Column(String)
-    age = Column(Integer)
+    __tablename__ = "products"
+    product_number = Column(Integer, primary_key=True)
+    brand = Column(String)
+    price = Column(Integer)
 
 
     def __repr__(self):
-        return f"Person({self.adrees=}    {self.name=}    {self.age=})"
+        return f"Person({self.product_number=}    {self.brand=}    {self.price=})"
 
 
 def create_test_data():
     with Session(engine) as session:
         new_items = []
-        new_items.append(Person(name="peter", age=18))
+        new_items.append(Person(brand="pipss", price=6))
         session.add_all(new_items)
         session.commit()
-
-
-
-
 
 
 engine = create_engine(Database, echo=False, future=True)
