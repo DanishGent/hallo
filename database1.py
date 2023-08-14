@@ -8,7 +8,7 @@ Database = 'sqlite:///S2311_my_second_sql_database.db'
 Base = declarative_base()
 
 
-class Person(Base):
+class Product(Base):
 
     __tablename__ = "products"
     product_number = Column(Integer, primary_key=True)
@@ -23,7 +23,7 @@ class Person(Base):
 def create_test_data():
     with Session(engine) as session:
         new_items = []
-        new_items.append(Person(brand="pipss", price=6))
+        new_items.append(Product(brand="pipss", price=6))
         session.add_all(new_items)
         session.commit()
 
