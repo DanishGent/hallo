@@ -121,7 +121,7 @@ def delete_aircraft(tree, record):  # delete tuple in database
 
 # region transport functions
 def read_transport_entries():  # Read content of entry boxes
-    return entry_transport_id.get(), entry_transport_date.get(), entry_transport_container_id.get(), entry_transport_aircraft_id.get(),
+    return entry_transport_id.get(), entry_transport_date.get(), entry_transport_container_id.get(),
 
 
 def clear_transport_entries():  # Clear entry boxes
