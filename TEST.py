@@ -65,7 +65,7 @@ def empty_treeview(tree):
 
 
 main_window = tk.Tk()
-main_window.title('AspIT S2: DanskCargo')
+main_window.title('TEST')
 main_window.geometry("1200x500")
 
 style = ttk.Style()
