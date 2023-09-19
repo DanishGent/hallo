@@ -259,7 +259,7 @@ label_container_destination.grid(row=0, column=2, padx=padx, pady=pady)
 entry_container_destination = tk.Entry(edit_frame_container, width=20)
 entry_container_destination.grid(row=1, column=2, padx=padx, pady=pady)
 
-label_container_weather = tk.Label(edit_frame_container, text="Weather")
+label_container_weather = tk.Label(edit_frame_container, text="BaneID")
 label_container_weather.grid(row=0, column=3, padx=padx, pady=pady)
 entry_container_weather = tk.Entry(edit_frame_container, width=14)
 entry_container_weather.grid(row=1, column=3, padx=padx, pady=pady)
